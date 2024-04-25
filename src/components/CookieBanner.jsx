@@ -44,7 +44,7 @@ export const CookieBanner = () => {
           </p>
 
           <div>
-            <button onClick={() => accept()}>Jada</button>
+            <button onClick={() => accept()}>Yesss</button>
             <button onClick={() => deny()}>NEJ</button>
           </div>
         </section>
