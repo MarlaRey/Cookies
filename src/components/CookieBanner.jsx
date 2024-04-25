@@ -7,13 +7,12 @@ export const CookieBanner = () => {
 
   // Tjek localStorage for cookieAccept ved komponentmontage
   useEffect(() => {
-    setShowBanner(true); // Altid vis banneret ved load
     if (localStorage.getItem("cookieAccept")) {
       if (JSON.parse(localStorage.getItem("cookieAccept")) === true) {
         ReactGA.initialize("import.meta.env.VITE_PUBLIC_GA_ID"); 
       }
     }
-  }, []);
+  }, [showBanner]);
 
   // accepter og sæt en local state og sporbegivenhed
   const accept = () => {
