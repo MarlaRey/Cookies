@@ -40,7 +40,7 @@ export const CookieBanner = () => {
       {showBanner && (
         <section className={style.cookieBanner}>
           <p>
-            Denne side bruger cookies, ok?
+            Denne side bruger cookies, er du med på den?
           </p>
 
           <div>
